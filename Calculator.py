@@ -1,3 +1,8 @@
+import sys
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+
 def add(x, y):
     return x + y
  
@@ -37,3 +42,6 @@ while True:
         break
     else:
         print("Invalid Input")
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
