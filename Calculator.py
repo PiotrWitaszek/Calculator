@@ -21,14 +21,14 @@ if __name__ == "__main__":
     print("2.Subtract")
     print("3.Multiply")
     print("4.Divide")
+    print("x.Exit programm")
     while True:
-        choice = input("Enter choice(1/2/3/4): ")
+        choice = input("Enter choice(1/2/3/4/x): ")
  
-        if choice in ('1', '2', '3', '4'):
+        if choice in ('1', '2', '3', '4',):
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
- # Jak wprowadzam wartość nieliczbową to pojawia się na przykład ValueError: could not convert string to float: 'x' i zamyka program,
- #  ale gdy wybieram działanie i wpisuję x to nie ma tego problemu
+ 
         if choice == '1':
                 print(num1, "+", num2, "=", add(num1, num2))
  
@@ -40,11 +40,13 @@ if __name__ == "__main__":
  
         elif choice == '4':
                 print(num1, "/", num2, "=", divide(num1, num2))
+        elif choice == 'x':
+                exit()
+                
     else:
         exit(1)
 
-# O takie coś chodziło?
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s') 
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
+   
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
-    pass
