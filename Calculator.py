@@ -43,7 +43,7 @@ if __name__ == "__main__":
         elif choice == 'x':
                 exit()
         else:
-        "Invalid input"
+                "Invalid input"
 
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s') 
     
