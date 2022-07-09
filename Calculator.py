@@ -25,7 +25,7 @@ if __name__ == "__main__":
     while True:
         choice = input("Enter choice(1/2/3/4/x): ")
  
-        if choice in ('1', '2', '3', '4',):
+        if choice in ('1', '2', '3', '4'):
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
  
@@ -42,11 +42,10 @@ if __name__ == "__main__":
                 print(num1, "/", num2, "=", divide(num1, num2))
         elif choice == 'x':
                 exit()
-                
-    else:
-        exit(1)
+        else:
+        "Invalid input"
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s') 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
+    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s') 
+    
    
 
