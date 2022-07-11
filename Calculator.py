@@ -41,9 +41,13 @@ if __name__ == "__main__":
             exit()
         else:
             print("Invalid input")
-
-    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s') 
-
+    
+num1 = int(sys.argv[1]) 
+num2 = int(sys.argv[2])
+choice = int(sys.argv[3])
+print("I %s following numbers: %s and %s" % sys.argv[3] % sys.argv[1] % sys.argv[3])
+# Kompletnie nie wiem od czego tu zacząć 
+    
     
    
 
