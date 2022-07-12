@@ -30,24 +30,21 @@ if __name__ == "__main__":
             num2 = float(input("Enter second number: "))
  
         if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2)) 
+            logging.debug('Adding: {} and {}'. format(num1, num2,)) 
+            print("Result is", add(num1, num2))
         elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
+            logging.debug('Subtracting: {} and {}'. format(num1, num2,)) 
+            print("Result is", subtract(num1, num2))
         elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
+            logging.debug('Multiplying: {} and {}'. format(num1, num2,)) 
+            print("Result is", multiply(num1, num2))
         elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
+            logging.debug('Dividing: {} and {}'. format(num1, num2,)) 
+            print("Result is", divide(num1, num2))
         elif choice == 'x':
             exit()
         else:
             print("Invalid input")
-    
-num1 = int(sys.argv[1]) 
-num2 = int(sys.argv[2])
-choice = int(sys.argv[3])
-print("I %s following numbers: %s and %s" % sys.argv[3] % sys.argv[1] % sys.argv[3])
-# Kompletnie nie wiem od czego tu zacząć 
-    
-    
-   
+
+
 
